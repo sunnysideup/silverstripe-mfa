@@ -1,74 +1,74 @@
 {
-    "name": "silverstripe/mfa",
-    "description": "Enable multi-factor authentication with fallback codes",
-    "type": "silverstripe-vendormodule",
-    "license": "BSD-3-Clause",
-    "keywords": [
-        "silverstripe",
-        "2-factor",
-        "authentication",
-        "module",
-        "security"
-    ],
-    "authors": [
-        {
-            "name": "Simon `Firesphere` Erkelens",
-            "email": "simonerkelens@silverstripe.com"
-        },
-        {
-            "name": "SilverStripe Ltd.",
-            "homepage": "https://www.silverstripe.com"
-        },
-        {
-            "name": "The SilverStripe Community",
-            "homepage": "https://www.silverstripe.org"
-        }
-    ],
-    "require": {
-        "php": "^8.1",
-        "silverstripe/framework": "^5",
-        "silverstripe/admin": "^2",
-        "silverstripe/siteconfig": "^5",
-        "defuse/php-encryption": "^2.3",
-        "silverstripe/login-forms": "^5"
+  "name": "silverstripe/mfa",
+  "description": "Enable multi-factor authentication with fallback codes",
+  "type": "silverstripe-vendormodule",
+  "license": "BSD-3-Clause",
+  "keywords": [
+    "silverstripe",
+    "2-factor",
+    "authentication",
+    "module",
+    "security"
+  ],
+  "authors": [
+    {
+      "name": "Simon `Firesphere` Erkelens",
+      "email": "simonerkelens@silverstripe.com"
     },
-    "require-dev": {
-        "phpunit/phpunit": "^9.6",
-        "squizlabs/php_codesniffer": "^3",
-        "silverstripe/documentation-lint": "^1",
-        "silverstripe/standards": "^1",
-        "phpstan/extension-installer": "^1.3"
+    {
+      "name": "SilverStripe Ltd.",
+      "homepage": "https://www.silverstripe.com"
     },
-    "conflict": {
-        "silverstripe/admin": "<2.4.0",
-        "silverstripe/subsites": "<2.2.2 || 2.3.0",
-        "silverstripe/webauthn-authenticator": "<4.5.0"
-    },
-    "suggest": {
-        "silverstripe/totp-authenticator": "Adds a method to authenticate with you phone using a time-based one-time password.",
-        "silverstripe/webauthn-authenticator": "Adds a method to authenticate with security keys or built-in platform authenticators."
-    },
-    "extra": {
-        "expose": [
-            "client/dist",
-            "client/lang"
-        ]
-    },
-    "config": {
-        "allow-plugins": {
-            "dealerdirect/phpcodesniffer-composer-installer": true
-        }
-    },
-    "autoload": {
-        "psr-4": {
-            "SilverStripe\\MFA\\": "src/",
-            "SilverStripe\\MFA\\Tests\\": "tests/php/",
-            "SilverStripe\\MFA\\Tests\\Behat\\": "tests/Behat/"
-        }
-    },
-    "support": {
-        "issues": "https://github.com/silverstripe/silverstripe-mfa/issues"
-    },
-    "minimum-stability": "dev",
-    "prefer-stable": true
+    {
+      "name": "The SilverStripe Community",
+      "homepage": "https://www.silverstripe.org"
+    }
+  ],
+  "require": {
+    "php": "^8.1",
+    "silverstripe/framework": "^5",
+    "silverstripe/admin": "^2",
+    "silverstripe/siteconfig": "^5",
+    "defuse/php-encryption": "^2.3",
+    "silverstripe/login-forms": "^5"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.6",
+    "squizlabs/php_codesniffer": "^3",
+    "silverstripe/documentation-lint": "^1",
+    "silverstripe/standards": "^1",
+    "phpstan/extension-installer": "^1.3"
+  },
+  "conflict": {
+    "silverstripe/admin": "<2.4.0",
+    "silverstripe/subsites": "<2.2.2 || 2.3.0",
+    "silverstripe/webauthn-authenticator": "<4.5.0"
+  },
+  "suggest": {
+    "silverstripe/totp-authenticator": "Adds a method to authenticate with you phone using a time-based one-time password.",
+    "silverstripe/webauthn-authenticator": "Adds a method to authenticate with security keys or built-in platform authenticators."
+  },
+  "extra": {
+    "expose": [
+      "client/dist",
+      "client/lang"
+    ]
+  },
+  "config": {
+    "allow-plugins": {
+      "dealerdirect/phpcodesniffer-composer-installer": true
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "SilverStripe\\MFA\\": "src/",
+      "SilverStripe\\MFA\\Tests\\": "tests/php/",
+      "SilverStripe\\MFA\\Tests\\Behat\\": "tests/Behat/"
+    }
+  },
+  "support": {
+    "issues": "https://github.com/silverstripe/silverstripe-mfa/issues"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
 }
